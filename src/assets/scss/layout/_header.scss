@@ -65,14 +65,11 @@
   .logo {
     width: auto;
     height: auto;
-    line-height: 5.5rem;
+    line-height: 4rem;
     border: solid _size(border-width) _palette(border);
     border-radius: 100%;
 
-    svg{
-      height:2rem;
-      width:4rem;
-    }
+    
     .icon {
       &:before {
         font-size: 2rem;

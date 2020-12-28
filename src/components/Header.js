@@ -6,7 +6,7 @@ const Header = props => (
     <div className="logo">
       <span className="icon">
       <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-       width="177.000000pt" height="177.000000pt" viewBox="0 0 177.000000 177.000000"
+       width="4rem" height="2rem" viewBox="0 0 177.000000 177.000000"
        preserveAspectRatio="xMidYMid meet">
       <metadata>
       Created by potrace 1.16, written by Peter Selinger 2001-2019
