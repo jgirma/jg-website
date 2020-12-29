@@ -12,6 +12,16 @@ import hangmanReactGif from '../images/hangman-react.gif'
 import kwadSquadStill from '../images/kwadsquad.png'
 import kwadSquadGif from '../images/kwadsquad.gif'
 
+const customStyles = {
+  content : {
+    top                   : '50%',
+    left                  : '50%',
+    right                 : 'auto',
+    bottom                : 'auto',
+    marginRight           : '-50%',
+    transform             : 'translate(-50%, -50%)'
+  }
+};
 
 class Main extends React.Component {
   render() {
@@ -62,11 +72,11 @@ I am a life-long learner. I love reading and learning whatever I can get my hand
           <h2 className="major">Work</h2>
           <p>Hover over any of the images to see my work in action!</p>
           <span className="image main">
-            <img
+            <a href="#"><img
             src={genStill} alt="genesis-consulting-site"
             onMouseOver={e => (e.currentTarget.src = genGif)}
             onMouseOut={e => (e.currentTarget.src = genStill)}
-            />
+            /></a>
             <img
             src={hangmanReactStill} alt="hangman-game"
             onMouseOver={e => (e.currentTarget.src = hangmanReactGif)}
