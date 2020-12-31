@@ -1,5 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import Button from 'react-bootstrap/Button'
+import ProjectTab from './ProjectTab'
+
 import headshot from '../images/headshot.png'
 import personalStill from '../images/personal.png'
 import personalGif from '../images/personal.gif'
@@ -11,6 +14,8 @@ import hangmanReactStill from '../images/hangman-react.png'
 import hangmanReactGif from '../images/hangman-react.gif'
 import kwadSquadStill from '../images/kwadsquad.png'
 import kwadSquadGif from '../images/kwadsquad.gif'
+import hipsterCheckStill from '../images/hipster-check.png'
+import hipsterCheckGif from '../images/hipster-check.gif'
 
 const customStyles = {
   content : {
@@ -22,6 +27,7 @@ const customStyles = {
     transform             : 'translate(-50%, -50%)'
   }
 };
+
 
 class Main extends React.Component {
   render() {
@@ -69,33 +75,52 @@ I am a life-long learner. I love reading and learning whatever I can get my hand
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
-          <p>Hover over any of the images to see my work in action!</p>
+          <h2 className="major">My Work</h2>
           <span className="image main">
-            <a href="#"><img
-            src={genStill} alt="genesis-consulting-site"
-            onMouseOver={e => (e.currentTarget.src = genGif)}
-            onMouseOut={e => (e.currentTarget.src = genStill)}
-            /></a>
-            <img
-            src={hangmanReactStill} alt="hangman-game"
-            onMouseOver={e => (e.currentTarget.src = hangmanReactGif)}
-            onMouseOut={e => (e.currentTarget.src = hangmanReactStill)}
+
+            <ProjectTab
+              img={genStill}
+              gif={genGif}
+              alt="Genesis-Consulting-Website-Images"
+              summary="Built and designed company site. Work included Branding/ Logo Creation/ Web Development. Built Using HTML, CSS, Javascript"
             />
-            <img
-            src={kwadSquadStill} alt="kwad-squad-drone-build"
-            onMouseOver={e => (e.currentTarget.src = kwadSquadGif)}
-            onMouseOut={e => (e.currentTarget.src = kwadSquadStill)}
+
+            <ProjectTab
+              img={hipsterCheckStill}
+              gif={hipsterCheckGif}
+              alt="hipster-check"
+              summary="Web application that uses the spotify API to analyze user's spotify data. Interprets how popular their most listened to artists and tracks and and determines an overall 'Hipster Score.' Built using React."
+              src="https://github.com/jgirma/hipster-check-spotify-app"
             />
-            <img
-            src={personalStill} alt="personal-site"
-            onMouseOver={e => (e.currentTarget.src = personalGif)}
-            onMouseOut={e => (e.currentTarget.src = personalStill)}
+
+            <ProjectTab
+              img={kwadSquadStill}
+              gif={kwadSquadGif}
+              alt="kwad-squad-project"
+              summary="Autonomous Drone that has an onboard camera able to detect desired object with >90% accuracy. Personally responsible for the object detection node. Built using Python, Tensorflow."
             />
-            <img
-            src={giftiiStill} alt="web-design-giftii"
-            onMouseOver={e => (e.currentTarget.src = giftiiGif)}
-            onMouseOut={e => (e.currentTarget.src = giftiiStill)}
+
+            <ProjectTab
+              img={hangmanReactStill}
+              gif={hangmanReactGif}
+              alt="hangman-game-react"
+              summary="Hangman game that requests category selection then allows for gameplay. Built using React"
+              src="https://github.com/jgirma/hangman-react"
+            />
+
+            <ProjectTab
+              img={giftiiStill}
+              gif={giftiiGif}
+              alt="giftii-consulting"
+              summary="Web Design/ Development for this site. Focused on branding/ Design of the site. Built using Wix."
+              link="https://www.giftiigirma.com/"
+            />
+
+            <ProjectTab
+              img={personalStill}
+              gif={personalGif}
+              alt="personal-site"
+              summary="Web Design/ Development for this site. Built using HTML, CSS"
             />
 
           </span>
