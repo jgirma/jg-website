@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-dimension-v2",
-  "description": "Gatsby Starter - Dimension V2",
+  "name": "jonathan-girma-personal-site",
+  "description": "Portfolio/ Personal Site",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Jonathan Girma",
   "dependencies": {
     "bootstrap": "^4.5.3",
     "gatsby": "^2.19.5",
@@ -31,6 +31,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/jgirma/jg-website"
   }
 }
