@@ -71,6 +71,7 @@ I am a life-long learner. I love reading and learning whatever I can get my hand
               gif={genGif}
               alt="Genesis-Consulting-Website-Images"
               summary="Built and designed company site. Work included Branding/ Logo Creation/ Web Development. Built Using HTML, CSS, Javascript"
+              title="Genesis Consulting"
             />
 
             <ProjectTab
@@ -79,6 +80,7 @@ I am a life-long learner. I love reading and learning whatever I can get my hand
               alt="hipster-check"
               summary="Web application that uses the spotify API to analyze user's spotify data. Interprets how popular their most listened to artists and tracks and and determines an overall 'Hipster Score.' Built using React."
               src="https://github.com/jgirma/hipster-check-spotify-app"
+              title="Spotify Api based App"
             />
 
             <ProjectTab
@@ -86,6 +88,7 @@ I am a life-long learner. I love reading and learning whatever I can get my hand
               gif={kwadSquadGif}
               alt="kwad-squad-project"
               summary="Autonomous Drone that has an onboard camera able to detect desired object with >90% accuracy. Personally responsible for the object detection node. Built using Python, Tensorflow."
+              title="Drone Object Detection"
             />
 
             <ProjectTab
@@ -94,6 +97,7 @@ I am a life-long learner. I love reading and learning whatever I can get my hand
               alt="hangman-game-react"
               summary="Hangman game that requests category selection then allows for gameplay. Built using React"
               src="https://github.com/jgirma/hangman-react"
+              title="Hangman"
             />
 
             <ProjectTab
@@ -102,6 +106,7 @@ I am a life-long learner. I love reading and learning whatever I can get my hand
               alt="giftii-consulting"
               summary="Web Design/ Development for this site. Focused on branding/ Design of the site. Built using Wix."
               link="https://www.giftiigirma.com/"
+              title="Diversity Consulting"
             />
 
             <ProjectTab
@@ -109,6 +114,7 @@ I am a life-long learner. I love reading and learning whatever I can get my hand
               gif={personalGif}
               alt="personal-site"
               summary="Web Design/ Development for this site. Built using HTML, CSS"
+              title="Personal"
             />
 
           </span>

@@ -4,8 +4,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 
-const ProjectTab = ({ img, gif, alt, summary, link, src }) => (
+const ProjectTab = ({ img, gif, alt, summary, link, src, title }) => (
   <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+  {title && <h1>{title}</h1>}
     <Row>
       <Col sm={3}>
         <Nav variant="tabs" className="flex-column">
