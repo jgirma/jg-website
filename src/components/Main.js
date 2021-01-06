@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import Button from 'react-bootstrap/Button'
 import ProjectTab from './ProjectTab'
 
 import headshot from '../images/headshot.png'
@@ -16,17 +15,6 @@ import kwadSquadStill from '../images/kwadsquad.png'
 import kwadSquadGif from '../images/kwadsquad.gif'
 import hipsterCheckStill from '../images/hipster-check.png'
 import hipsterCheckGif from '../images/hipster-check.gif'
-
-const customStyles = {
-  content : {
-    top                   : '50%',
-    left                  : '50%',
-    right                 : 'auto',
-    bottom                : 'auto',
-    marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)'
-  }
-};
 
 
 class Main extends React.Component {
