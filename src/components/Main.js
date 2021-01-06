@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import ProjectTab from './ProjectTab'
 
+import backgroundPhoto from '../images/mount.jpg'
 import headshot from '../images/headshot.png'
 import personalStill from '../images/personal.png'
 import personalGif from '../images/personal.gif'
