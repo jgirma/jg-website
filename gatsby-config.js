@@ -2,10 +2,12 @@ module.exports = {
   siteMetadata: {
     title: 'Jonathan Girma',
     author: 'Jonathan Girma',
+    siteUrl: 'https://www.jonathangirma.com',
     description: 'Freelance Web Developer',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
