@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-
-import '../assets/scss/main.scss'
+import styled from 'styled-components'
 
 const Layout = ({ children, location }) => {
 
@@ -11,17 +10,21 @@ const Layout = ({ children, location }) => {
 
   if (location && location.pathname === '/') {
     content = (
-      <div>
-        {children}
-      </div>
-    )
-  } else {
-    content = (
-      <div id="wrapper" className="page">
+      <Wrapper>
         <div>
           {children}
         </div>
-      </div>
+      </Wrapper>
+    )
+  } else {
+    content = (
+      <Wrapper>
+        <div id="wrapper" className="page">
+          <div>
+            {children}
+          </div>
+        </div>
+      </Wrapper>
     )
   }
 
@@ -41,8 +44,8 @@ const Layout = ({ children, location }) => {
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
+              { name: 'description', content: 'Jonathan Girma Personal Site' },
+              { name: 'keywords', content: 'freelance, engeineer, developer, amazon, jonathan, girma' },
             ]}
           >
             <html lang="en" />
@@ -57,5 +60,23 @@ const Layout = ({ children, location }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
+
+const Wrapper = styled.div`
+scroll-snap-type: y proximity;
+overflow-y: scroll;
+height: 100vh;
+
+ul {
+  list-style-type: none;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+`
 
 export default Layout
