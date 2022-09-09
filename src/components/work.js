@@ -9,7 +9,7 @@ class WorkPage extends React.Component {
     render(){
         return(
             <Wrapper>
-                <section className="column">
+                <section className="column work-section">
                     <h1>RECENT WORK</h1>
                     <div className="site-example">
                         <div className="row">
@@ -32,6 +32,9 @@ class WorkPage extends React.Component {
                         </div>
                     </div>
                 </section>
+                <footer className="footer">
+                    © 2022 Jonathan Girma
+                </footer>
             </Wrapper>
         )
     }
@@ -41,18 +44,20 @@ const Wrapper = styled.div`
 background-color: white;
 z-index: 1;
 
-.column {
-    flex-direction: column;
-}
-
-.row{
-    flex-direction: row;
-}
-
 .portfolio-img{
     height: 20rem;
     width: auto;
     display: fixed;
+
+    @media only screen and (max-width: 767px){
+        height: 10rem;
+        justify-content: space-evenly;
+    }
+}
+
+.work-section {
+    height: auto;
+    min-height: 100vh;
 }
 
 .mobile{
@@ -62,6 +67,10 @@ z-index: 1;
 
 .site-example {
     margin: 5%;
+}
+
+.footer{
+    justify-content: center
 }
 `
 

@@ -21,15 +21,12 @@ top: 0;
 display: flex;
 flex-direction: row;
 z-index: 1;
-backdrop-filter: blur(80%);
 
 .navbar{
     justify-content: unset;
     flex-wrap: unset;
-    a {
-        color: white;
-        text-decoration: none;
-    }
+    background-color: black;
+    min-width: 100vw;
 }
 
 .list-element {

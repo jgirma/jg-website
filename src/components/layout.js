@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
+import '@fontsource/poppins'
 
 const Layout = ({ children, location }) => {
 
@@ -62,9 +63,10 @@ Layout.propTypes = {
 }
 
 const Wrapper = styled.div`
-scroll-snap-type: y proximity;
-overflow-y: scroll;
+scroll-snap-type: y mandatory;
+//overflow-y: scroll;
 height: 100vh;
+font-family: Poppins;
 
 ul {
   list-style-type: none;
@@ -76,6 +78,19 @@ section {
   justify-content: center;
   align-items: center;
   scroll-snap-align: start;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row{
+  flex-direction: row;
 }
 `
 

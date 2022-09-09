@@ -15,7 +15,7 @@ class BannerPage extends React.Component {
                         </video>
                     </div>
                     <h1 className='title'>JONATHAN GIRMA</h1>
-                    <p className='description'>Bringing Creative Solutions through Web Applications</p>
+                    <p className='description'>Software Engineer and Freelance Web Developer</p>
                 </section>
             </Wrapper>
         )
@@ -56,16 +56,32 @@ class BannerPage extends React.Component {
       color: white;
       font-size: 6rem;
       z-index: -1;
+      width: max-content;
+
+        @media only screen and (max-width: 767px){
+            font-size 2rem;
+        }
+
+        @media only screen and (max-width: 1200px){
+            font-size 4rem;
+        }
     }
     
     .description {
       position: absolute;
       top: 90%;
-      left: 30%;
+      left: 50%;
       transform: translate(-50%, -50%);
       color: white;
       font-size: 1.5rem;
       z-index: -1;
+      width: auto;
+
+      @media only screen and (max-width: 767px){
+          font-size: 1rem;
+          left: 60%;
+          top: 90%;
+      }
     }
     `
 
