@@ -58,12 +58,12 @@ class BannerPage extends React.Component {
       z-index: -1;
       width: max-content;
 
-        @media only screen and (max-width: 767px){
-            font-size 2rem;
-        }
-
         @media only screen and (max-width: 1200px){
             font-size 4rem;
+        }
+
+        @media only screen and (max-width: 767px){
+            font-size 2rem;
         }
     }
     
