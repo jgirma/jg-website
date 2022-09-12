@@ -10,7 +10,7 @@ class BannerPage extends React.Component {
                 <section>
                     <NavBar />
                     <div className='video-wrapper'>
-                        <video className='background-vid' autoplay='true' muted='true' loop id='bg-video'>
+                        <video className='background-vid' autoplay='true' muted='true' loop playsInline='true' id='bg-video'>
                             <source src={bgVid} type='video/mp4'/>
                         </video>
                     </div>
