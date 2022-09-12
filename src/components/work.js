@@ -63,6 +63,10 @@ z-index: 1;
 .mobile{
     border-radius: 5px;
     margin-left: 15%;
+
+    @media only screen and (max-width: 767px){
+        display: none;
+    }
 }
 
 .site-example {

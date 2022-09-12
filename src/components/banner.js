@@ -78,9 +78,7 @@ class BannerPage extends React.Component {
       width: auto;
 
       @media only screen and (max-width: 767px){
-          font-size: 1rem;
-          left: 60%;
-          top: 90%;
+          display: none;
       }
     }
     `
